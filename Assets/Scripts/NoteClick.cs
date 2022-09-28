@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Note : MonoBehaviour
+public class NoteClick : MonoBehaviour
 {
-
     public bool canBeHit;
 
-    
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitLine")
         {
             canBeHit = true;
+
         }
     }
 
@@ -25,12 +25,11 @@ public class Note : MonoBehaviour
     }
 
 
-
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.Space))
+        if (canBeHit && Input.GetMouseButtonDown(0))
         {
-            Debug.Log("hitting space key");
+            Debug.Log("clicking left");
             gameObject.SetActive(false);
             Destroy(this.gameObject);
         }
