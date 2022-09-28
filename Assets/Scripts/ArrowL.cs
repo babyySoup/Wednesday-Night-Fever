@@ -12,6 +12,7 @@ public class ArrowL : MonoBehaviour
         if (other.tag == "HitDisk")
         {
             canBeHit = true;
+            Debug.Log("can hit left arrow key");
         }
     }
 
@@ -26,7 +27,7 @@ public class ArrowL : MonoBehaviour
 
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.UpArrow))
+        if (canBeHit && Input.GetKeyDown(KeyCode.LeftArrow))
         {
             Debug.Log("hitting left arrow key");
             gameObject.SetActive(false);
