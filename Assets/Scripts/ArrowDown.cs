@@ -5,7 +5,8 @@ using UnityEngine;
 public class ArrowDown : MonoBehaviour
 {
     public bool canBeHit;
-
+    Score playerscore;
+    public GameObject score;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,6 +33,11 @@ public class ArrowDown : MonoBehaviour
             Debug.Log("hitting D arrow key");
             gameObject.SetActive(false);
             Destroy(this.gameObject);
+            playerscore.scoreCount += 1;
         }
+    }
+    void Start()
+    {
+        playerscore = score.GetComponent<Score>();
     }
 }

@@ -6,8 +6,9 @@ public class Note : MonoBehaviour
 {
 
     public bool canBeHit;
+    Score playerscore;
+    public GameObject score;
 
-    
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitLine")
@@ -33,6 +34,12 @@ public class Note : MonoBehaviour
             Debug.Log("hitting space key");
             gameObject.SetActive(false);
             Destroy(this.gameObject);
+            playerscore.scoreCount += 1;
         }
+    }
+
+    void Start()
+    {
+        playerscore = score.GetComponent<Score>();
     }
 }
