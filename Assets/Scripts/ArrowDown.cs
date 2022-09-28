@@ -7,6 +7,8 @@ public class ArrowDown : MonoBehaviour
     public bool canBeHit;
     Score playerscore;
     public GameObject score;
+    public GameObject Combo;
+    Combo CN;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -34,10 +36,12 @@ public class ArrowDown : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
+            CN.ComboNumber += 1;
         }
     }
     void Start()
     {
         playerscore = score.GetComponent<Score>();
+        CN = Combo.GetComponent<Combo>();
     }
 }

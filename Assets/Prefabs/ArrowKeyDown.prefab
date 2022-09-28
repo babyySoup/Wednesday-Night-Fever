@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8608300050685765906}
   m_Layer: 0
   m_Name: ArrowKeyDown
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,3 +158,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   score: {fileID: 0}
+  Combo: {fileID: 0}

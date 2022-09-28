@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HitLine
   - HitDisk
+  - Arrow
   layers:
   - Default
   - TransparentFX

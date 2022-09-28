@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4610616699299841190}
   m_Layer: 0
   m_Name: ArrowKeyR
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   score: {fileID: 0}
+  Combo: {fileID: 0}
 --- !u!1 &4610616700411238493
 GameObject:
   m_ObjectHideFlags: 0
