@@ -11,7 +11,7 @@ public class BeatScoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hasStarted = false;
+        //hasStarted = false;
         beatTempo = beatTempo / 60f;
     }
 
@@ -20,10 +20,10 @@ public class BeatScoller : MonoBehaviour
     {
         if (!hasStarted)
         {
-            if (Input.anyKeyDown)
-            {
-                hasStarted =true;
-            }
+            //if (Input.anyKeyDown)
+            //{
+            //    hasStarted =true;
+            //}
         }
         else
         {
