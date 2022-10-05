@@ -28,7 +28,7 @@ public class ArrowDown : MonoBehaviour
 
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.DownArrow))
+        if (canBeHit && Input.GetKey(KeyCode.DownArrow))
         {
             Debug.Log("hitting D arrow key");
             gameObject.SetActive(false);

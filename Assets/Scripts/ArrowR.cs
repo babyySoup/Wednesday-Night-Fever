@@ -28,7 +28,7 @@ public class ArrowR : MonoBehaviour
 
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.RightArrow))
+        if (canBeHit && Input.GetKey(KeyCode.RightArrow))
         {
             Debug.Log("hitting r arrow key");
             gameObject.SetActive(false);

@@ -28,7 +28,7 @@ public class ArrowL : MonoBehaviour
 
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.LeftArrow))
+        if (canBeHit && Input.GetKey(KeyCode.LeftArrow))
         {
             Debug.Log("hitting left arrow key");
             gameObject.SetActive(false);

@@ -28,7 +28,7 @@ public class ArrowUp : MonoBehaviour
 
     void Update()
     {
-        if (canBeHit && Input.GetKeyDown(KeyCode.UpArrow))
+        if (canBeHit && Input.GetKey(KeyCode.UpArrow))
         {
             Debug.Log("hitting up arrow key");
             gameObject.SetActive(false);
