@@ -1124,7 +1124,7 @@ PrefabInstance:
     - target: {fileID: 3330979095164816191, guid: 9d2d4af8bd2692340819aff756d314e4, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 3330979095164816191, guid: 9d2d4af8bd2692340819aff756d314e4, type: 3}
       propertyPath: score
       value: 
@@ -1292,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 4610616699299841190, guid: 1ab26ad7aec1e3143b4f8fabab33d02f, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 4610616699299841190, guid: 1ab26ad7aec1e3143b4f8fabab33d02f, type: 3}
       propertyPath: score
       value: 
@@ -2308,7 +2308,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.03617215}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2319,7 +2319,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.7957807}
   m_EdgeRadius: 0
 --- !u!50 &1684452331
 Rigidbody2D:
@@ -2330,7 +2330,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684452329}
   m_BodyType: 1
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -2890,7 +2890,7 @@ PrefabInstance:
     - target: {fileID: 8608300050685765906, guid: 795372e6b3a985046b308d283823be1b, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 8608300050685765906, guid: 795372e6b3a985046b308d283823be1b, type: 3}
       propertyPath: score
       value: 
@@ -3077,7 +3077,7 @@ PrefabInstance:
     - target: {fileID: 314606437677508822, guid: 2a1f1da54f2ae7a4b98828bf082ec684, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 314606437677508822, guid: 2a1f1da54f2ae7a4b98828bf082ec684, type: 3}
       propertyPath: score
       value: 
@@ -3146,7 +3146,7 @@ PrefabInstance:
     - target: {fileID: 314606437677508822, guid: 2a1f1da54f2ae7a4b98828bf082ec684, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 314606437677508822, guid: 2a1f1da54f2ae7a4b98828bf082ec684, type: 3}
       propertyPath: score
       value: 
@@ -3215,7 +3215,7 @@ PrefabInstance:
     - target: {fileID: 3330979095164816191, guid: 9d2d4af8bd2692340819aff756d314e4, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 3330979095164816191, guid: 9d2d4af8bd2692340819aff756d314e4, type: 3}
       propertyPath: score
       value: 
@@ -3284,7 +3284,7 @@ PrefabInstance:
     - target: {fileID: 4610616699299841190, guid: 1ab26ad7aec1e3143b4f8fabab33d02f, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 4610616699299841190, guid: 1ab26ad7aec1e3143b4f8fabab33d02f, type: 3}
       propertyPath: score
       value: 
@@ -3370,7 +3370,7 @@ PrefabInstance:
     - target: {fileID: 8608300050685765906, guid: 795372e6b3a985046b308d283823be1b, type: 3}
       propertyPath: Combo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1684452329}
     - target: {fileID: 8608300050685765906, guid: 795372e6b3a985046b308d283823be1b, type: 3}
       propertyPath: score
       value: 
