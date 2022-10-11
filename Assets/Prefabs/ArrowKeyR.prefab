@@ -74,6 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   score: {fileID: 0}
+  DiskParticle: {fileID: 0}
 --- !u!1 &4610616700411238493
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4610616700411238493}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.00000047683716, z: -0.0389907}
+  m_LocalPosition: {x: 0, y: 0.00000047683716, z: 0}
   m_LocalScale: {x: 0.70832, y: 0.70832, z: 0.70832}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -7,7 +7,7 @@ public class ArrowR : MonoBehaviour
     public bool canBeHit;
     Score playerscore;
     public GameObject score;
-
+    public GameObject DiskParticle;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitDisk")
@@ -31,6 +31,7 @@ public class ArrowR : MonoBehaviour
         if (canBeHit && Input.GetKey(KeyCode.RightArrow))
         {
             Debug.Log("hitting r arrow key");
+            DiskParticle.GetComponent<ParticleSystem>().Play();
             gameObject.SetActive(false);
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;

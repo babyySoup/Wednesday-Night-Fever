@@ -9,6 +9,8 @@ public class Note : MonoBehaviour
     Score playerscore;
     public GameObject score;
 
+    public GameObject noteParticle;
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitLine")
@@ -35,6 +37,9 @@ public class Note : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
+
+            noteParticle = GameObject.Find("yellowParticle");
+            noteParticle.GetComponent<ParticleSystem>().Play();
         }
     }
 

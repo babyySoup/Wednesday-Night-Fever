@@ -8,6 +8,8 @@ public class ArrowDown : MonoBehaviour
     Score playerscore;
     public GameObject score;
 
+    public GameObject DiskParticle;
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitDisk")
@@ -31,6 +33,9 @@ public class ArrowDown : MonoBehaviour
         if (canBeHit && Input.GetKey(KeyCode.DownArrow))
         {
             Debug.Log("hitting D arrow key");
+            
+            DiskParticle.GetComponent<ParticleSystem>().Play();
+
             gameObject.SetActive(false);
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;

@@ -7,7 +7,7 @@ public class ArrowUp : MonoBehaviour
     public bool canBeHit;
     Score playerscore;
     public GameObject score;
-
+    public GameObject DiskParticle;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitDisk")
@@ -32,6 +32,8 @@ public class ArrowUp : MonoBehaviour
         {
             Debug.Log("hitting up arrow key");
             gameObject.SetActive(false);
+            DiskParticle.GetComponent<ParticleSystem>().Play();
+
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
         }

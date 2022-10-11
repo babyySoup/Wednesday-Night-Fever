@@ -9,6 +9,9 @@ public class Song1Manager : MonoBehaviour
     public bool startPlaying;
 
     public BeatScoller BS;
+
+    public GameObject StartingScreen;
+    public GameObject GameSet;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,9 @@ public class Song1Manager : MonoBehaviour
             {
                 startPlaying = true;
                 BS.hasStarted = true;
+
+                StartingScreen.SetActive(false);
+                GameSet.SetActive(true);
 
                 song1.Play();
             }
