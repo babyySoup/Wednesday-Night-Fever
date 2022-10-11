@@ -9,7 +9,7 @@ public class ArrowUp : MonoBehaviour
     public GameObject score;
     public GameObject Combo;
     Combo CN;
-
+    
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitDisk")
@@ -37,12 +37,18 @@ public class ArrowUp : MonoBehaviour
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
             CN.ComboNumber += 1;
+            if(CN.ComboNow == true)
+            {
+                playerscore.scoreCount += 3;
+            }
         }
+
     }
 
     void Start()
     {
         playerscore = score.GetComponent<Score>();
         CN = Combo.GetComponent<Combo>();
+        
     }
 }

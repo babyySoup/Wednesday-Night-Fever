@@ -8,10 +8,12 @@ public class Combo : MonoBehaviour
     public int ComboNumber;
     public GameObject ComboImage;
     public float HitTime;
+    public bool ComboNow;
     void Start()
     {
         ComboNumber = 0;
         ComboImage.SetActive(false);
+        ComboNow = false;
     }
 
     // Update is called once per frame
@@ -20,6 +22,8 @@ public class Combo : MonoBehaviour
         if(ComboNumber >= HitTime)
         {
             ComboImage.SetActive(true);
+            ComboNow = true;
+
         }
         else
         {

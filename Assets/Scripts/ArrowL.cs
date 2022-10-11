@@ -37,6 +37,10 @@ public class ArrowL : MonoBehaviour
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
             CN.ComboNumber += 1;
+            if (CN.ComboNow == true)
+            {
+                playerscore.scoreCount += 3;
+            }
         }
     }
 
