@@ -8,6 +8,10 @@ public class ArrowUp : MonoBehaviour
     Score playerscore;
     public GameObject score;
     public GameObject DiskParticle;
+    //Combo CN;
+    //public GameObject Combo;
+
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "HitDisk")
@@ -36,11 +40,20 @@ public class ArrowUp : MonoBehaviour
 
             Destroy(this.gameObject);
             playerscore.scoreCount += 1;
+            //CN.ComboNumber += 1;
+            Combo comboScript = GameObject.Find("Combo System").GetComponent<Combo>();
+            comboScript.ComboNumber += 1;
+            Debug.Log("combo!");
+            if(comboScript.ComboNow == true)
+            {
+                playerscore.scoreCount += 3;
+            }
         }
     }
 
     void Start()
     {
         playerscore = score.GetComponent<Score>();
+        //CN = Combo.GetComponent<Combo>();
     }
 }
